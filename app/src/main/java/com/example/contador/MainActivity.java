@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 Button b=(Button) view;
                 int ninicial=50;
                 int nfinal=100;
-                int nsorteado=random.nextInt(10);
+                int nsorteado=random.nextInt(nfinal+ninicial) + ninicial;
 
                 txtNum.setText(Integer.toString(nsorteado));
             }
